@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>O.O JavaScript</title>
+	<title>Calculator</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/master.css">
@@ -20,22 +20,29 @@
 
 
 		<div class="jumbotron">
-			<h1>OO JavaScript</h1>
-			<p></p>
-			<button id="button" type="button" class="btn btn-warning">Click me!</button>
+			<h1>Calculator</h1>
+			<p>Simple addition calculator</p>
+
+			  <p><input type="text" id="numberOne" class="form-control" placeholder="Enter first number here"></p>
+			  <p><input type="text" id="numberTwo" class="form-control" placeholder="Enter second number here"></p>
+				<p><button id="addBtn" type="button" class="btn btn-warning">Add</button></p>
+				<p><button id="subtractBtn" type="button" class="btn btn-warning">Subtract</button></p>
+				<p><button id="multiplyBtn" type="button" class="btn btn-warning">Multiple</button></p>
+				<p><button id="divideBtn" type="button" class="btn btn-warning">Divide</button></p>
+				<p><button id="clearBtn" type="button" class="btn btn-warning">Clear</button></p>
+
 		</div>
 
-		<div id="placeholderDiv" class="well">
-			<!-- *#### DICE ROLL FROM JS FILE ####* -->
-		</div>
+    <div id="placeholderDiv" class="well">
+      <!-- *#### DICE ROLL FROM JS FILE ####* -->
+    </div>
 
 
-	</div>
-	<!-- #####= END Container =##### -->
+	</div><!-- #####= END Container =##### -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<!-- #####= personal js files =##### -->
-	<script src="js/main.js" charset="utf-8"></script>
+	<script src="js/calculator.js" charset="utf-8"></script>
 </body>
 
 </html>
