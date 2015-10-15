@@ -3,13 +3,16 @@ function printMessage(contact) {
 	placeholderDiv.innerHTML = contact;
 }
 
-function Contact(name, email) {
-	//this={};
-	this.name = name;
-	this.email = email;
+
+//CREATES THE RANDOM NUMBER/DICE VIA OBJECT CONSTRUCTOR.
+function Dice(sides) {
+  this.sides = sides;
+  this.roll = function() {
+    var randomNumber = Math.floor(Math.random() * this.sides + 1);
+    return randomNumber;
+  };
 }
-var contact1 = new Contact("Colin", 'cbstodd@gmail.com');
+var dice = new Dice(6);
+var dice10 = new Dice(10);
 
-
-printMessage(contact1.name);
-printMessage(contact1.email);
+printMessage(dice.roll === dice10.roll);
