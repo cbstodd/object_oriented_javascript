@@ -29,21 +29,19 @@ function Dice(sides) {
 var diceOne = new Dice(6);
 var diceTwo = new Dice(6);
 
+var rollDiceOne = diceBtnOne.onclick = function() {
+	var rollOne = diceOne.roll();
+	printNumberOne("<h1>" + rollOne + "</h1>");
+};
+
+var rollDiceTwo = diceBtnTwo.onclick = function() {
+	var rollTwo = diceTwo.roll();
+	printNumberTwo("<h1>" + rollTwo + "</h1>");
+};
+
 rollBothDiceBtn.onclick = function () {
-	var rollOne = diceOne.roll();
-	printNumberOne("<h1>" + rollOne + "</h1>");
-	var rollTwo = diceTwo.roll();
-	printNumberTwo("<h1>" + rollTwo + "</h1>");
-};
-
-diceBtnOne.onclick = function() {
-	var rollOne = diceOne.roll();
-	printNumberOne("<h1>" + rollOne + "</h1>");
-};
-
-diceBtnTwo.onclick = function() {
-	var rollTwo = diceTwo.roll();
-	printNumberTwo("<h1>" + rollTwo + "</h1>");
+	rollDiceOne();
+	rollDiceTwo();
 };
 
 //JQUERY CLEARS DICE NUMBERS
