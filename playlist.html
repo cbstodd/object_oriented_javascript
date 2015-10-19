@@ -21,7 +21,7 @@
     <div class="jumbotron">
       <h1>Playlist</h1>
       <p></p>
-      <!-- <button id="button" type="button" class="btn btn-info">Click me!</button> -->
+      <!-- <button id="button" type="button" class="btn btn-primary">Click me!</button> -->
     </div>
 
     <div id="placeholderDiv">
@@ -32,27 +32,27 @@
 
     <!-- *#### Media Player  ####* -->
     <div class="col-lg-12">
-      <div class="panel panel-danger">
+      <div class="panel panel-primary">
         <!-- Default panel contents -->
         <div class="panel-heading">Music Playlist</div>
         <div class="panel-body">
           <p>
-            <button type="button" class="btn btn-danger btn-sm">Play</button>
-            <button type="button" class="btn btn-danger btn-sm">Previous</button>
-            <button type="button" class="btn btn-danger btn-sm">Next</button>
+            <button id="play" type="button" class="btn btn-primary btn-sm">Play</button>
+            <button id="next" type="button" class="btn btn-primary btn-sm">Next</button>
+            <button id="stop" type="button" class="btn btn-primary btn-sm">Stop</button>
           </p>
         </div>
 
         <!-- Songs -->
         <table class="table">
           <tr>
-            <td class="title">Divided Sky - Phish</td>
-            <td class="duration">5:32</td>
+            <th>Song</th>
+            <th>Artist</th>
+            <th>Duration</th>
           </tr>
-          <tr class="active">
-            <td class="title">Earthtone - Twilite</td>
-            <td class="duration">8:21</td>
-          </tr>
+          <tbody id="playlist">
+            <!-- #####= Playlist renders here =##### -->
+          </tbody>
         </table>
       </div>
 
@@ -66,7 +66,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <!-- #####= personal js files =##### -->
-  <script src="js/playlist.js" charset="utf-8"></script>
+  <script src="js/playlist/playlist.js" charset="utf-8"></script>
+  <script src="js/playlist/song.js" charset="utf-8"></script>
+  <script src="data/songs.js" charset="utf-8"></script>
 </body>
 
 </html>
